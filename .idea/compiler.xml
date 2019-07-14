@@ -6,13 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="practive-in-action" />
         <module name="ThreadSummary" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="practive-in-action" target="1.8" />
+      <module name="ThreadSummary" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ThreadSummary" options="-parameters" />
+      <module name="practive-in-action" options="-parameters" />
     </option>
   </component>
 </project>
